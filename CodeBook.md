@@ -1,26 +1,26 @@
-### Course Project Codebook
+## Course Project Codebook
 
-## Original Data
+### Original Data
 The data provided from the course website is originally collected from the accelerometers from the Samsung Galaxy S smartphone. 
 A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Here are the data for the project:
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 It includes the following files:
 
-	* features_info.txt: Information about the variables used in the feature vector.
-	* features.txt: List of all features
-	* activity_labels.txt: Activity names
-	* test/X_test.txt: Test data set
-	* test/y_test.txt: Test labels
-	* test/subject_test.txt : Test subject
-	* train/X_train.txt: Training data set
-	* train/y_train.txt: Training labels
-	* train/subject_reain.txt : Training subject
+* features_info.txt: Information about the variables used in the feature vector.
+* features.txt: List of all features
+* activity_labels.txt: Activity names
+* test/X_test.txt: Test data set
+* test/y_test.txt: Test labels
+* test/subject_test.txt : Test subject
+* train/X_train.txt: Training data set
+* train/y_train.txt: Training labels
+* train/subject_reain.txt : Training subject
 
-## Transformation
+### Transformation
 The objective of the project is to get and clean the original dataset and prepare tidy data that can be used for later analysis. 
 The R script run_analysis.R is created to do the following:
 
@@ -33,7 +33,7 @@ The R script run_analysis.R is created to do the following:
     6. From above, creates a second, independent tidy data set with the average of each variable for each subject and each activity. 
        Write the data to file AverageDataSet.csv.
 
-## Tidy Data
+### Tidy Data
 The new data set has 68 columns. They are Subject, Activity and followed by 66 features. Each row has the average of each variable for each subject and each activity.
 There are total of 180 rows (30 subjects and 6 activities). Here is the sample of first a few columns and rows:
 Subject	Activity	tBodyAccMeanX	tBodyAccMeanY	tBodyAccMeanZ	tBodyAccStdX	tBodyAccStdY	tBodyAccStdZ	tGravityAccMeanX	tGravityAccMeanY	tGravityAccMeanZ ...
@@ -44,7 +44,7 @@ Subject	Activity	tBodyAccMeanX	tBodyAccMeanY	tBodyAccMeanZ	tBodyAccStdX	tBodyAcc
 1	WALKING_DOWNSTAIRS	0.28918832	-0.009918505	-0.107566191	0.030035338	-0.031935943	-0.230434213	0.931874419	-0.266610339	-0.062119959...
 1	WALKING_UPSTAIRS	0.25546169	-0.023953149	-0.097302002	-0.354708025	-0.002320265	-0.019479239	0.893351098	-0.362153364	-0.07540294...
 
-## Tidy Dataset Variables
+### Tidy Dataset Variables
 Subject	
 Activity
 tBodyAccMeanX	
