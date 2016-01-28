@@ -24,18 +24,17 @@ It includes the following files:
 The objective of the project is to get and clean the original dataset and prepare tidy data that can be used for later analysis. 
 The R script run_analysis.R is created to do the following:
 
-    1. Merges the training and the test sets to create one data set.
-    2. Extracts only the measurements on the mean (with "mean()" in feature name) and standard deviation (with "std()" in feature name)
-       for each measurement. There are 66 columns.
-    3. Uses descriptive activity names in activity_labels.txt to name the activities in the data set.
-    4. Appropriately labels the data set with descriptive variable names - remove "()" and "-" from names.
-    5. Combine the Subject and Activity columns with the data set. 
-    6. From above, creates a second, independent tidy data set with the average of each variable for each subject and each activity. 
-       Write the data to file AverageDataSet.csv.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean (with "mean()" in feature name) and standard deviation (with "std()" in feature name) for each measurement. There are 66 columns.
+3. Uses descriptive activity names in activity_labels.txt to name the activities in the data set.
+4. Appropriately labels the data set with descriptive variable names - remove "()" and "-" from names.
+5. Combine the Subject and Activity columns with the data set. 
+6. From above, creates a second, independent tidy data set with the average of each variable for each subject and each activity. Write the data to file AverageDataSet.csv.
 
 ### Tidy Data
 The new data set has 68 columns. They are Subject, Activity and followed by 66 features. Each row has the average of each variable for each subject and each activity.
 There are total of 180 rows (30 subjects and 6 activities). Here is the sample of first a few columns and rows:
+
 Subject	Activity	tBodyAccMeanX	tBodyAccMeanY	tBodyAccMeanZ	tBodyAccStdX	tBodyAccStdY	tBodyAccStdZ	tGravityAccMeanX	tGravityAccMeanY	tGravityAccMeanZ ...
 1	LAYING	0.221598244	-0.040513953	-0.113203554	-0.928056469	-0.836827406	-0.826061402	-0.248881798	0.705549773	0.44581772...
 1	SITTING	0.261237565	-0.001308288	-0.104544182	-0.977229008	-0.922618642	-0.939586291	0.831509933	0.204411593	0.332043703...
@@ -46,12 +45,19 @@ Subject	Activity	tBodyAccMeanX	tBodyAccMeanY	tBodyAccMeanZ	tBodyAccStdX	tBodyAcc
 
 ### Tidy Dataset Variables
 Subject	
+
 Activity
-tBodyAccMeanX	
+
+tBodyAccMeanX
+	
 tBodyAccMeanY
+
 tBodyAccMeanZ	
+
 tBodyAccStdX
-tBodyAccStdY	
+
+tBodyAccStdY
+	
 tBodyAccStdZ
 tGravityAccMeanX	
 tGravityAccMeanY
