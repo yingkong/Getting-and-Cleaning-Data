@@ -44,8 +44,8 @@ There are total of 180 rows (30 subjects and 6 activities). Here is the sample o
 	1	   WALKING_UPSTAIRS	  0.25546169	-0.023953149	-0.097302002	-0.354708025 ...
 
 ### Tidy Dataset Variables
-Subject	
-Activity  
+Subject  	
+Activity    
 tBodyAccMeanX  	
 tBodyAccMeanY  
 tBodyAccMeanZ  	
