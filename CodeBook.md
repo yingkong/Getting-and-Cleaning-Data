@@ -35,31 +35,24 @@ The R script run_analysis.R is created to do the following:
 The new data set has 68 columns. They are Subject, Activity and followed by 66 features. Each row has the average of each variable for each subject and each activity.
 There are total of 180 rows (30 subjects and 6 activities). Here is the sample of first a few columns and rows:
 
-Subject	Activity	tBodyAccMeanX	tBodyAccMeanY	tBodyAccMeanZ	tBodyAccStdX	tBodyAccStdY	tBodyAccStdZ	tGravityAccMeanX	tGravityAccMeanY	tGravityAccMeanZ ...
-1	LAYING	0.221598244	-0.040513953	-0.113203554	-0.928056469	-0.836827406	-0.826061402	-0.248881798	0.705549773	0.44581772...
-1	SITTING	0.261237565	-0.001308288	-0.104544182	-0.977229008	-0.922618642	-0.939586291	0.831509933	0.204411593	0.332043703...
-1	STANDING	0.278917629	-0.01613759	-0.110601818	-0.995759902	-0.973190056	-0.979775877	0.942952	-0.272983832	0.013490582...
-1	WALKING	0.277330759	-0.017383819	-0.111148104	-0.283740259	0.114461337	-0.260027902	0.935223201	-0.282165021	-0.068102864...
-1	WALKING_DOWNSTAIRS	0.28918832	-0.009918505	-0.107566191	0.030035338	-0.031935943	-0.230434213	0.931874419	-0.266610339	-0.062119959...
-1	WALKING_UPSTAIRS	0.25546169	-0.023953149	-0.097302002	-0.354708025	-0.002320265	-0.019479239	0.893351098	-0.362153364	-0.07540294...
+	Subject	Activity	      tBodyAccMeanX	tBodyAccMeanY	tBodyAccMeanZ	tBodyAccStdX ...
+	1	   LAYING	          0.221598244	-0.040513953	-0.113203554	-0.928056469 ...	
+	1	   SITTING	          0.261237565	-0.001308288	-0.104544182	-0.977229008 ...	
+	1	   STANDING	          0.278917629	-0.01613759	    -0.110601818	-0.995759902 ...	
+	1	   WALKING	          0.277330759	-0.017383819	-0.111148104	-0.283740259 ...	
+	1	   WALKING_DOWNSTAIRS 0.28918832	-0.009918505	-0.107566191	0.030035338	...
+	1	   WALKING_UPSTAIRS	  0.25546169	-0.023953149	-0.097302002	-0.354708025 ...
 
 ### Tidy Dataset Variables
 Subject	
-
-Activity
-
-tBodyAccMeanX
-	
-tBodyAccMeanY
-
-tBodyAccMeanZ	
-
-tBodyAccStdX
-
-tBodyAccStdY
-	
-tBodyAccStdZ
-tGravityAccMeanX	
+Activity  
+tBodyAccMeanX  	
+tBodyAccMeanY  
+tBodyAccMeanZ  	
+tBodyAccStdX  
+tBodyAccStdY  	
+tBodyAccStdZ  
+tGravityAccMeanX  	
 tGravityAccMeanY
 tGravityAccMeanZ	
 tGravityAccStdX
