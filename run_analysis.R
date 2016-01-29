@@ -12,19 +12,19 @@ library(dplyr)
 
 # Read data and merge test and training data into one data set
 #####################################################################
-setwd("C:/Coursera/Course3_CleanupData/project/UCI HAR Dataset")
-features <- read.csv("features.txt", header=FALSE, sep="")
-actLabel <- read.csv("activity_labels.txt", header=FALSE, sep ="")
+
+features <- read.csv("./UCI HAR Dataset/features.txt", header=FALSE, sep="")
+actLabel <- read.csv("./UCI HAR Dataset/activity_labels.txt", header=FALSE, sep ="")
 
 # read test data sets
-xTest <- read.csv("./test/X_test.txt", header=FALSE, sep="")
-yTest <- read.csv("./test/y_test.txt", header=FALSE, sep ="")
-subjTest <- read.csv("./test/subject_test.txt", header=FALSE, sep ="")
+xTest <- read.csv("./UCI HAR Dataset/test/X_test.txt", header=FALSE, sep="")
+yTest <- read.csv("./UCI HAR Dataset/test/y_test.txt", header=FALSE, sep ="")
+subjTest <- read.csv("./UCI HAR Dataset/test/subject_test.txt", header=FALSE, sep ="")
 
 # read training data sets
-xTrain <- read.csv("./train/X_train.txt", header=FALSE, sep="")
-yTrain <- read.csv("./train/y_train.txt", header=FALSE, sep ="")
-subjTrain <- read.csv("./train/subject_train.txt", header=FALSE, sep ="")
+xTrain <- read.csv("./UCI HAR Dataset/train/X_train.txt", header=FALSE, sep="")
+yTrain <- read.csv("./UCI HAR Dataset/train/y_train.txt", header=FALSE, sep ="")
+subjTrain <- read.csv("./UCI HAR Dataset/train/subject_train.txt", header=FALSE, sep ="")
 
 # combine training and test data sets
 xMerged <- rbind(xTest, xTrain)
@@ -55,4 +55,4 @@ newDf <- rename(newDf, Subject = V1)
 ######################################################################
 # and each subject from newDf.
 avgDf <- newDf %>% group_by(Subject, Activity) %>% summarise_each(funs(mean))
-write.csv(avgDf, file = "AverageDataSet.csv", row.names = FALSE)
+write.table(avgDf, file = "AverageDataSet.txt", row.names = FALSE)
