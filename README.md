@@ -2,7 +2,8 @@
 
 This repository includes the following files:
 
-* run_analysis.R - The script to get and clean data.  The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
+* run_analysis.R - The script to get and clean data.  
+  Run the script in working directory. The Samsung data folder /UCI HAR Dataset/ should be in working directory too.
 
 * AverageDataSet.txt - The output tidy dataset created by the script.
 
