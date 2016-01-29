@@ -29,7 +29,7 @@ The R script run_analysis.R is created to do the following:
 3. Uses descriptive activity names in activity_labels.txt to name the activities in the data set.
 4. Appropriately labels the data set with descriptive variable names - remove "()" and "-" from names.
 5. Combine the Subject and Activity columns with the data set. 
-6. From above, creates a second, independent tidy data set with the average of each variable for each subject and each activity. Write the data to file AverageDataSet.csv.
+6. From above, creates a second, independent tidy data set with the average of each variable for each subject and each activity. Write the data to file AverageDataSet.txt.
 
 ### Tidy Data
 The new data set has 68 columns. They are Subject, Activity and followed by 66 features. Each row has the average of each variable for each subject and each activity.
